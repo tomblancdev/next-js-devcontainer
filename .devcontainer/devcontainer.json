@@ -1,0 +1,38 @@
+{
+	"name": "Node.js & TypeScript",
+	"dockerComposeFile": [
+		// "../../docker-compose.yml", // ! 👈 Uncomment or change this to the path of your docker-compose file.
+		"./docker-compose.yml"
+	],
+	"service": "next-js-devcontainer",
+	"workspaceFolder": "/workspace",
+	"shutdownAction": "stopCompose",
+	"postCreateCommand": "bash /workspace/.devcontainer/scripts/post-create.sh",
+	"postStartCommand": "bash /workspace/.devcontainer/scripts/post-start.sh",
+	"containerEnv": {
+		"GIT_TEMPLATE_REPO_URLS": "https://github.com/tomblancdev/next-js-devcontainer.git", // ! 👈 Change this to your templates repositories.
+		"GIT_TEMPLATE_REMOTE_NAME": "TEMPLATE" // ! 👈 Change this to your template remote.
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"github.copilot", // Copilot extension for VS Code
+				"github.vscode-pull-request-github", // Pull Request extension for VS Code
+				"aaron-bond.better-comments", // Better Comments extension for VS Code
+				"streetsidesoftware.code-spell-checker" // Code Spell Checker extension for VS Code
+			],
+			"settings": {
+				// ### Global settings ###
+				"editor.codeActionsOnSave": {
+					"source.organizeImports": "explicit",
+					"source.fixAll": "explicit"
+				},
+				"editor.formatOnSave": true,
+				"editor.formatOnPaste": true,
+			}
+		}
+	},
+	"features": {},
+	// 👇 Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "root"
+}

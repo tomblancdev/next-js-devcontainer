@@ -1,0 +1,11 @@
+version: "latest"
+
+services:
+  next-js-devcontainer: # 👈 Name of the service
+    build: .
+    container_name: next-js-devcontainer
+    ports:
+      - "3000:3000"
+    volumes:
+      - ..:/workspace:cached
+    command: /bin/sh -c "while sleep 1000; do :; done" # * keep the container running
