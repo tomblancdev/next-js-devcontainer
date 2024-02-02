@@ -47,6 +47,7 @@ You are connected as ${RED}${USER}${NC}.
 
 Informations about the container:
     - ${UNDERLINE}Node version${CLEAR}: ${CYAN}$(node -v)${NC}
+    - ${UNDERLINE}NPM version${CLEAR}: ${CYAN}$(npm -v)${NC}
     - ${UNDERLINE}Container id${CLEAR}: ${CYAN}$(hostname)${NC}
     - ${UNDERLINE}Current branch${CLEAR}: ${CYAN}${branch}${NC}
     - ${UNDERLINE}Current directory${CLEAR}: ${CYAN}$(pwd)${NC}

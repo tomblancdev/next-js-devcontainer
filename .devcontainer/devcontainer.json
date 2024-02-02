@@ -2,7 +2,7 @@
 	"name": "Node.js & TypeScript",
 	"dockerComposeFile": [
 		// "../../docker-compose.yml", // ! 👈 Uncomment or change this to the path of your docker-compose file.
-		"./docker-compose.yml"
+		"./docker-compose.dev.yml"
 	],
 	"service": "next-js-devcontainer",
 	"workspaceFolder": "/workspace",
