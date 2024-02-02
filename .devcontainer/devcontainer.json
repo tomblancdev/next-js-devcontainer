@@ -19,7 +19,12 @@
 				"github.copilot", // Copilot extension for VS Code
 				"github.vscode-pull-request-github", // Pull Request extension for VS Code
 				"aaron-bond.better-comments", // Better Comments extension for VS Code
-				"streetsidesoftware.code-spell-checker" // Code Spell Checker extension for VS Code
+				"streetsidesoftware.code-spell-checker", // Code Spell Checker extension for VS Code
+				"dbaeumer.vscode-eslint", // ESLint extension for VS Code
+				"esbenp.prettier-vscode", // Prettier extension for VS Code
+				"bradlc.vscode-tailwindcss", // Tailwind CSS IntelliSense extension for VS Code
+				"formulahendry.auto-rename-tag", // Auto Rename Tag extension for VS Code
+				"britesnow.vscode-toggle-quotes" // Toggle Quotes extension for VS Code
 			],
 			"settings": {
 				// ### Global settings ###
