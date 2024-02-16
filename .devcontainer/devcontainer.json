@@ -20,11 +20,11 @@
 				"github.vscode-pull-request-github", // Pull Request extension for VS Code
 				"aaron-bond.better-comments", // Better Comments extension for VS Code
 				"streetsidesoftware.code-spell-checker", // Code Spell Checker extension for VS Code
-				"dbaeumer.vscode-eslint", // ESLint extension for VS Code
-				"esbenp.prettier-vscode", // Prettier extension for VS Code
+				"biomejs.biome", // Biome extension for VS Code
 				"bradlc.vscode-tailwindcss", // Tailwind CSS IntelliSense extension for VS Code
 				"formulahendry.auto-rename-tag", // Auto Rename Tag extension for VS Code
-				"britesnow.vscode-toggle-quotes" // Toggle Quotes extension for VS Code
+				"britesnow.vscode-toggle-quotes", // Toggle Quotes extension for VS Code
+				"christian-kohler.path-intellisense" // Path Intellisense extension for VS Code
 			],
 			"settings": {
 				// ### Global settings ###
@@ -33,7 +33,33 @@
 					"source.fixAll": "explicit"
 				},
 				"editor.formatOnSave": true,
-				"editor.formatOnPaste": true
+				"editor.formatOnPaste": true,
+				// ### Typescript settings ###
+				"[typescript]": {
+					"editor.defaultFormatter": "biomejs.biome",
+					"editor.codeActionsOnSave": {
+						"quickfix.biome": "explicit",
+						"source.organizeImports.biome": "explicit"
+					},
+					"togglequotes.chars": [
+						"\"",
+						"'",
+						"`"
+					]
+				},
+				// ### Javascript settings ###
+				"[javascript]": {
+					"editor.defaultFormatter": "biomejs.biome",
+					"editor.codeActionsOnSave": {
+						"quickfix.biome": "explicit",
+						"source.organizeImports.biome": "explicit"
+					},
+					"togglequotes.chars": [
+						"\"",
+						"'",
+						"`"
+					]
+				}
 			}
 		}
 	},
