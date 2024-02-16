@@ -59,6 +59,36 @@
 						"'",
 						"`"
 					]
+				},
+				// ### TSX settings ###
+				"[typescriptreact]": {
+					"editor.defaultFormatter": "biomejs.biome",
+					"editor.codeActionsOnSave": {
+						"quickfix.biome": "explicit",
+						"source.organizeImports.biome": "explicit"
+					},
+					"togglequotes.chars": [
+						"\"",
+						"'",
+						"`"
+					]
+				},
+				// ### JSX settings ###
+				"[javascriptreact]": {
+					"editor.defaultFormatter": "biomejs.biome",
+					"editor.codeActionsOnSave": {
+						"quickfix.biome": "explicit",
+						"source.organizeImports.biome": "explicit"
+					},
+					"togglequotes.chars": [
+						"\"",
+						"'",
+						"`"
+					]
+				},
+				// ### JSON settings ###
+				"[json]": {
+					"editor.defaultFormatter": "vscode.json-language-features"
 				}
 			}
 		}
