@@ -20,9 +20,8 @@ repos:
   hooks:
   - id: check-json5
 
-repos:
--   repo: https://github.com/biomejs/pre-commit
-    rev: "v0.1.0"  # Use the sha / tag you want to point at
-    hooks:
-    -   id: biome-check
-        additional_dependencies: ["@biomejs/biome@1.5.3"]
+- repo: https://github.com/biomejs/pre-commit
+  rev: "v0.1.0"  # Use the sha / tag you want to point at
+  hooks:
+  - id: biome-check
+    additional_dependencies: ["@biomejs/biome@1.5.3"]
