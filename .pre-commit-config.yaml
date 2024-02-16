@@ -20,9 +20,10 @@ repos:
   hooks:
   - id: check-json5
 
-- repo: https://github.com/biomejs/pre-commit
-  rev: "v0.1.0"  # Use the sha / tag you want to point at
+- repo: local
   hooks:
-  - id: biome-check
-    additional_dependencies: ["@biomejs/biome@1.5.3"]
-    files: "\\.(jsx?|tsx?|c(js|ts)|m(js|ts)|d\\.(ts|cts|mts))$" # to include json add "|jsonc?" before )$ at the end
+  - id: local-biome-check
+    name: biome check
+    entry: bun run biome check --apply --files-ignore-unknown=true --no-errors-on-unmatched ./
+    language: system
+    types: [text]

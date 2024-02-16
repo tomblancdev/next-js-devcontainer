@@ -13,6 +13,10 @@ git fetch --all
 # Pull current branch from git
 git pull
 
+# bun installation
+bash ./bun_install.sh
+
+
 # Update pre-commit
 bash ./pre-commit_update.sh
 
