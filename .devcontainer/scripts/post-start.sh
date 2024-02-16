@@ -13,6 +13,9 @@ git fetch --all
 # Pull current branch from git
 git pull
 
+# Update pre-commit
+bash ./pre-commit_update.sh
+
 # check if git template repo are up-to-date
 template_repo_status=$(bash ./git/check-merge-templates.sh)
 
