@@ -5,8 +5,8 @@ NC='\033[0m' # No Color
 
 echo -e "${CYAN}Runing post-create.sh${NC}"
 
-cd /workspace
+cd ${APP_HOME}
 
-bash /workspace/.devcontainer/scripts/git/add-remote-templates.sh
+bash ${APP_HOME}/.devcontainer/scripts/git/add-remote-templates.sh
 
 exit 0

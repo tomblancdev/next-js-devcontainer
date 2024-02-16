@@ -36,6 +36,8 @@ arts=(
 """
 )
 
+cd ${APP_HOME}
+
 # get current branch
 branch=$(git branch | grep \* | cut -d ' ' -f2)
 
