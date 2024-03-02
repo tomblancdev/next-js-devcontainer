@@ -12,4 +12,5 @@ services:
     volumes:
       - ..:/workspace:cached # mount the current directory as workspace to the container
     environment:
-      - APP_HOME=/workspace # set the environment variable APP_HOME to the workspace directory
+      APP_HOME: /workspace # set the environment variable APP_HOME to the workspace directory
+      NODE_ENV: development # set the environment variable NODE_ENV to development
