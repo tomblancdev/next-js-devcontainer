@@ -7,3 +7,4 @@ Dockerfile
 .gitignore
 .pre-commit-config.yaml
 biome.json
+node_modules
